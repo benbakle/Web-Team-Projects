@@ -1,0 +1,483 @@
+/*
+* #.# Base Styles
+*
+* @summary: Contains basic global styling for the site 
+* 
+* @resources: 
+*
+* @media-queries: YES
+*
+*/
+
+:root
+{
+    font-size: 16px;
+}
+
+body, .body-text
+{
+    color: #2e2e2e;
+    font-family: 'Calibri', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+{
+    color: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h1 small,
+h1 .small, h2 small,
+h2 .small, h3 small,
+h3 .small, h4 small,
+h4 .small, h5 small,
+h5 .small, h6 small,
+h6 .small,
+.h1 small,
+.h1 .small, .h2 small,
+.h2 .small, .h3 small,
+.h3 .small, .h4 small,
+.h4 .small, .h5 small,
+.h5 .small, .h6 small,
+.h6 .small
+{
+    color: #777777;
+    font-weight: normal;
+    line-height: 1;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 small, h1 .small, .h1 small, .h1 .small,
+h2 small, h2 .small, .h2 small, .h2 .small,
+h3 small, h3 .small, .h3 small, .h3 .small
+{
+    font-size: 65%;
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h4 small, h4 .small, .h4 small, .h4 .small,
+h5 small, h5 .small, .h5 small, .h5 .small,
+h6 small, h6 .small, .h6 small, .h6 .small
+{
+    font-size: 75%;
+}
+
+h1, .h1
+{
+    font-family: 'Bitter', serif;
+    font-size: 3.375rem;
+    font-weight: 400;
+}
+
+h2, .h2
+{
+    font-family: 'Bitter', serif;
+    font-size: 2.3125rem;
+    font-weight: 700;
+}
+
+h3, .h3
+{
+    font-family: 'Bitter', serif;
+    font-size: 1.8125rem;
+    font-weight: 700;
+}
+
+h4, .h4
+{
+    font-family: 'Bitter', serif;
+    font-size: 1.1875rem;
+    font-weight: 700;
+}
+
+h5, .h5
+{
+    font-family: 'Bitter', serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+h6, .h6
+{
+    font-family: 'Bitter', serif;
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.container-custom
+{
+    width: 100%;
+    max-width: 1530px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+
+/* global reset of ul */
+ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+p, .p, article, .article
+{
+    font-size: 1em;
+    line-height: 1.294;
+}
+
+.em
+{
+    font-style: italic;
+}
+
+
+a
+{
+    color: #e2383f;
+    text-decoration: underline;
+}
+
+a:hover, a:focus
+{
+    color: #c8102e;
+    text-decoration: none;
+}
+
+a:focus
+{
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+
+
+
+
+/*Basic Button Styles */
+.btn
+{
+    display: inline-block;
+    width: 100%;
+    max-width: 290px;
+    margin: 10px 0;
+    padding: 20px 0;
+    border-width: 2px;
+    border-radius: 3em;
+    font-family: "Bitter";
+    font-size: 1.125rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .25s;
+}
+
+.btn:focus,
+.btn.focus,
+.btn:active:focus,
+.btn:active.focus,
+.btn.active:focus,
+.btn.active.focus
+{
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus
+{
+    color: #333;
+    text-decoration: none;
+}
+
+.btn:active,
+.btn.active
+{
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    outline: 0;
+    background-image: none;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn
+{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+}
+
+a.btn.disabled,
+fieldset[disabled] a.btn
+{
+    pointer-events: none;
+}
+
+/*:: BUTTON DEFAULT (.btn-default) */
+
+.btn-default
+{
+    border-color: #c8102e;
+    background-color: transparent;
+    color: #c8102e;
+}
+
+.btn-default:focus,
+.btn-default.focus
+{
+    background-color: #e2383f;
+    border-color: #e2383f;
+    color: #fff;
+}
+
+.btn-default:hover,
+.btn-default.hover
+{
+    background-color: #d55e63;
+    border-color: #c8102e;
+    color: #fff;
+}
+
+.btn-default:active,
+.btn-default.active
+{
+    background-color: #e2383f;
+    border-color: #e2383f;
+    color: #fff;
+}
+
+.btn-default:active:hover,
+.btn-default:active:focus, .btn-default:active.focus,
+.btn-default.active:hover, .btn-default.active:focus,
+.btn-default.active.focus
+{
+    background-color: #e2383f;
+    border-color: #e2383f;
+    color: #fff;
+}
+
+.btn-default.disabled:hover,
+.btn-default.disabled:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled]:hover,
+.btn-default[disabled]:focus,
+.btn-default[disabled].focus
+{
+    border-color: #ccc;
+    background-color: #fff;
+}
+
+/*:: BUTTON DEFAULT (.btn-secondary) */
+
+.btn-secondary
+{
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus
+{
+    background-color: #007564;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-secondary:hover,
+.btn-secondary.hover
+{
+    background-color: #258275;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-secondary:active,
+.btn-secondary.active
+{
+    background-color: #007564;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-secondary:active:hover,
+.btn-secondary:active:focus, .btn-secondary:active.focus,
+.btn-secondary.active:hover, .btn-secondary.active:focus,
+.btn-secondary.active.focus
+{
+    background-color: #007564;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-secondary.disabled:hover,
+.btn-secondary.disabled:focus,
+.btn-secondary.disabled.focus,
+.btn-secondary[disabled]:hover,
+.btn-secondary[disabled]:focus,
+.btn-secondary[disabled].focus
+{
+    border-color: #ccc;
+    background-color: #fff;
+}
+
+.btn-default,
+.btn-accent,
+.btn-secondary,
+.btn-lg.btn-default,
+.btn-lg.btn-accent,
+.btn-lg.btn-secondary
+{
+    max-width: 290px;
+    padding: 20px 0;
+}
+
+.btn-md.btn-default,
+.btn-md.btn-accent,
+.btn-md.btn-secondary
+{
+    max-width: 229px;
+    padding: 15px 0;
+    font-size: .78rem;
+}
+
+.btn-sm.btn-default,
+.btn-sm.btn-accent,
+.btn-sm.btn-secondary
+{
+    max-width: 177px;
+    padding: 10px 0;
+    font-size: .78rem;
+}
+
+.btn-xs.btn-default,
+.btn-xs.btn-accent,
+.btn-xs.btn-secondary
+{
+    max-width: 125px;
+    padding: 5px 0;
+    font-size: .7rem;
+}
+
+
+.primary-color
+{
+    color: #c8102e;
+}
+
+.primary-background-color
+{
+    background-color: #c8102e;
+}
+
+.primary-color-light
+{
+    color: #e2383f;
+}
+
+.primary-background-color-light
+{
+    background-color: #e2383f;
+}
+
+.secondary-color
+{
+    color: #002821;
+}
+
+.secondary-background-color
+{
+    background-color: #002821;
+}
+
+.secondary-color-light
+{
+    color: #007564;
+}
+
+.secondary-background-color-light
+{
+    background-color: #007564;
+}
+
+.secondary-color-dark
+{
+    color: #001713;
+}
+
+.secondary-background-color-dark
+{
+    background-color: #001713;
+}
+
+.secondary-color-extra
+{
+    color: #034638;
+}
+
+.accent-color
+{
+    color: #c8a347;
+}
+
+.accent-background-color
+{
+    background-color: #c8a347;
+}
+
+.accent-color-light
+{
+    color: #fff4cd;
+}
+
+.accent-background-color-light
+{
+    background-color: #fff4cd;
+}
+
+.accent-font
+{
+    font-style: italic;
+    font-weight: normal;
+}
+
+.contrast-color
+{
+    color: #fff;
+}
+
+.contrast-background-color
+{
+    background-color: #fff;
+}
