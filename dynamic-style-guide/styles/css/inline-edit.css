@@ -17,7 +17,7 @@
     transition: 1s;
     box-sizing: border-box;
     text-decoration: none;
-    color: #222;
+    color: #222 !important;
     border: 2px dotted #ccc;
     font-size: 16px !important;
 }
@@ -70,7 +70,7 @@
 .inline-edit-update:active,
 .inline-edit-update:focus
 {
-    color: #58C765;
+    color: #58C765 !important;
 }
 
 .inline-edit-cancel,
@@ -78,5 +78,10 @@
 .inline-edit-cancel:active,
 .inline-edit-cancel:focus
 {
-    color: #9E1C11;
+    color: #9E1C11 !important;
+}
+
+.inline-edit-cancel.cancel-all
+{
+    display:inline-block !important;
 }

@@ -1,4 +1,5 @@
-﻿/// <reference path="style-guide.js" />
+﻿/// <reference path="color-shader.js" />
+/// <reference path="style-guide.js" />
 var updateElementProperty = function () {
     var $propertyEdit = $(".property-edit");
     $propertyEdit.each(function () {
@@ -10,6 +11,7 @@ var updateElementProperty = function () {
             $(this).prev(".property-text").text(value);
         }
     });
+    
 }
 
 var showInput = function (trigger) {
@@ -26,11 +28,11 @@ var hideInput = function () {
     $(".inline-edit-cancel").fadeOut(500);
 }
 
-$(".inline-edit-cancel").on("mouseup", function () {
+$(".inline-edit-cancel").on("click", function () {
     hideInput();
 });
 
-$(".inline-edit-trigger").on("mouseup", function () {
+$(".inline-edit-trigger").on("click", function () {
     showInput($(this));
 });
 
@@ -39,5 +41,11 @@ $(".inline-edit-update").on("click", function () {
     updateElementProperty();
     //printProperty();
     hideInput();
+    colorShader();
 });
-
+$(".inline-edit-all").on("click", function () {
+    var $trigger = $(".inline-edit-trigger");
+    $trigger.each(function () {
+        showInput($(this));
+    });
+});

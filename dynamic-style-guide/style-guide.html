@@ -20,12 +20,14 @@
                 <li><a href="#fontFamiliy">Font Families</a></li>
                 <li><a href="#typography">Typography</a></li>
                 <li><a href="#colors">Colors</a></li>
+                <li><a href="#links">Links</a></li>
                 <li><a href="#buttons">Buttons</a></li>
                 <li><a href="#lists">Lists</a></li>
             </ul>
+            <hr />
+            <a href="#" class="inline-edit-all"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit All</a>
+            <a href="#" class="inline-edit-cancel cancel-all"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
         </div>
-        <hr />
-
         <!--:: FONT FAMILY SECTION::-->
         <section class="container font-family-wrapper" id="fontFamiliy">
             <h2>Font Families</h2>
@@ -94,6 +96,17 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Body Font</h3>
                     <div class="property-desc-row">
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="body" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="body" data-property="color" /><span class="end-property"><span class="end-property">;</span></span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
                         <div class="property-label">font-family:</div>
                         <div class="inline-edit-group">
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
@@ -115,17 +128,7 @@
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div class="property-desc-row">
-                        <div class="property-label">font-style:</div>
-                        <div class="inline-edit-group">
-                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
-                                <span class="property-printer" data-element-to-display="body" data-element-property="font-style"></span>
-                            </a>
-                            <input class="inline-edit-input property-edit" data-property-element="body" data-property="font-style" /><span class="end-property"><span class="end-property">;</span></span>
-                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
-                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
+
                     <div class="property-desc-row">
                         <div class="property-label">font-weight:</div>
                         <div class="inline-edit-group">
@@ -963,8 +966,16 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Primary Color - Light</h3>
                     <div class="property-desc-row">
-                        <div>color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".primary-color-light" data-element-property="color"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".primary-color-light_background" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".primary-color-light_background" data-property="background-color" />
+                            <span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7 ">
@@ -1074,8 +1085,16 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Primary Color - Dark</h3>
                     <div class="property-desc-row">
-                        <div>color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".primary-color-dark" data-element-property="color"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".primary-color-dark_background" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".primary-color-dark_background" data-property="background-color" />
+                            <span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7 ">
@@ -1185,8 +1204,16 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Secondary Color</h3>
                     <div class="property-desc-row">
-                        <div>color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".secondary-color" data-element-property="color"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".secondary-color_background" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".secondary-color_background" data-property="background-color" />
+                            <span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7 ">
@@ -1296,8 +1323,16 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Secondary Color - Light</h3>
                     <div class="property-desc-row">
-                        <div>color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".secondary-color-light" data-element-property="color"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".secondary-color-light_background" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".secondary-color-light_background" data-property="background-color" />
+                            <span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7 ">
@@ -1407,8 +1442,16 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Secondary Color - Dark</h3>
                     <div class="property-desc-row">
-                        <div>color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".secondary-color-dark" data-element-property="color"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".secondary-color-dark_background" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".secondary-color-dark_background" data-property="background-color" />
+                            <span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7 ">
@@ -1518,8 +1561,16 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Accent Color</h3>
                     <div class="property-desc-row">
-                        <div>color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".accent-color" data-element-property="color"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".accent-color_background" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".accent-color_background" data-property="background-color" />
+                            <span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7 ">
@@ -1629,8 +1680,16 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Accent Color - Light</h3>
                     <div class="property-desc-row">
-                        <div>color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".accent-color-light" data-element-property="color"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".accent-color-light_background" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".accent-color-light_background" data-property="background-color" />
+                            <span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7 ">
@@ -1740,8 +1799,16 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Accent Color - Dark</h3>
                     <div class="property-desc-row">
-                        <div>color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".accent-color-dark" data-element-property="color"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".accent-color-dark_background" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".accent-color-dark_background" data-property="background-color" />
+                            <span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7 ">
@@ -1848,6 +1915,147 @@
 
         </section>
 
+
+        <!--:: LINK SECTION ::-->
+        <section class="container link-wrapper" id="links">
+            <h2>Links</h2>
+            <hr />
+
+            <!--:: LINK ::-->
+            <div class="row property-display-wrapper">
+                <div class="col-md-5">
+                    <h3 class="tag-title">Links</h3>
+                    <div class="property-desc-row">
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="a" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="a" data-property="color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
+                        <div class="property-label">font-size:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="a" data-element-property="font-size"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="a" data-property="font-size" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
+                        <div class="property-label">font-weight:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="a" data-element-property="font-weight"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="a" data-property="font-weight" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
+                        <div class="property-label">text-decoration:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="a" data-element-property="text-decoration"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="a" data-property="text-decoration" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class=" col-md-12 btn-display-wrapper">
+                        <div class="link-class-desc">
+                            <h4>Normal</h4>
+                        </div>
+                        <a href="javascript:void(0)">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--LINK - HOVER-->
+            <div class="row property-display-wrapper">
+                <div class="col-md-5">
+                    <h3 class="tag-title">Links - Hover</h3>
+                    <div class="property-desc-row">
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="a.hover" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="a.hover" data-property="color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
+                        <div class="property-label">text-decoration:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="a.hover" data-element-property="text-decoration"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="a.hover" data-property="text-decoration" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class=" col-md-12 btn-display-wrapper">
+                        <div class="link-class-desc">
+                            <h4>Normal</h4>
+                        </div>
+                        <a href="javascript:void(0)" class="hover">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--LINK - FOCUS-->
+            <div class="row property-display-wrapper">
+                <div class="col-md-5">
+                    <h3 class="tag-title">Links - Focus</h3>
+                    <div class="property-desc-row">
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="a.focus" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="a.focus" data-property="color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
+                        <div class="property-label">text-decoration:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="a.focus" data-element-property="text-decoration"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="a.focus" data-property="text-decoration" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class=" col-md-12 btn-display-wrapper">
+                        <div class="link-class-desc">
+                            <h4>Normal</h4>
+                        </div>
+                        <a href="javascript:void(0)" class="focus">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!--:: BUTTON SECTION ::-->
         <section class="container button-wrapper" id="buttons">
             <h2>Buttons</h2>
@@ -1880,23 +2088,45 @@
                         </div>
                     </div>
                     <div class="property-desc-row">
+                        <div class="property-label">border-radius:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-primary" data-element-property="border-radius"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary" data-property="border-radius" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-primary" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary" data-property="color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
+                        <div class="property-label">max-width:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-primary" data-element-property="max-width"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary" data-property="max-width" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
                         <div class="property-label">padding:</div>
                         <div class="inline-edit-group">
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".btn-primary" data-element-property="padding"></span>
                             </a>
                             <input class="inline-edit-input property-edit" data-property-element=".btn-primary" data-property="padding" /><span class="end-property">;</span>
-                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
-                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <div class="property-desc-row">
-                        <div class="property-label">margin:</div>
-                        <div class="inline-edit-group">
-                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
-                                <span class="property-printer" data-element-to-display=".btn-primary" data-element-property="margin"></span>
-                            </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary" data-property="margin" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -1939,27 +2169,17 @@
                         </div>
                     </div>
                     <div class="property-desc-row">
-                        <div class="property-label">padding:</div>
+                        <div class="property-label">color:</div>
                         <div class="inline-edit-group">
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
-                                <span class="property-printer" data-element-to-display=".btn-primary.hover" data-element-property="padding"></span>
+                                <span class="property-printer" data-element-to-display=".btn-primary.hover" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.hover" data-property="padding" /><span class="end-property">;</span>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.hover" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div class="property-desc-row">
-                        <div class="property-label">margin:</div>
-                        <div class="inline-edit-group">
-                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
-                                <span class="property-printer" data-element-to-display=".btn-primary.hover" data-element-property="margin"></span>
-                            </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.hover" data-property="margin" /><span class="end-property">;</span>
-                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
-                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="col-md-7">
                     <div class="col-md-12 btn-display-wrapper">
@@ -1976,20 +2196,37 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Primary Button - Active</h3>
                     <div class="property-desc-row">
-                        <div>background-color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-primary.active" data-element-property="background-color"></span></strong></div>
+                        <div class="property-label">background-color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-primary.active" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.active" data-property="background-color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>border:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-primary.active" data-element-property="border"></span></strong></div>
+                        <div class="property-label">border:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-primary.active" data-element-property="border"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.active" data-property="border" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>padding:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-primary.active" data-element-property="padding"></span></strong></div>
-                    </div>
-                    <div class="property-desc-row">
-                        <div>margin:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-primary.active" data-element-property="margin"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-primary.active" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.active" data-property="color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -2007,20 +2244,37 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Primary Button - Focus</h3>
                     <div class="property-desc-row">
-                        <div>background-color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-primary.focus" data-element-property="background-color"></span></strong></div>
+                        <div class="property-label">background-color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-primary.focus" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.focus" data-property="background-color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>border:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-primary.focus" data-element-property="border"></span></strong></div>
+                        <div class="property-label">border:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-primary.focus" data-element-property="border"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.focus" data-property="border" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>padding:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-primary.focus" data-element-property="padding"></span></strong></div>
-                    </div>
-                    <div class="property-desc-row">
-                        <div>margin:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-primary.focus" data-element-property="margin"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-primary.focus" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.focus" data-property="color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -2034,27 +2288,77 @@
             </div>
 
 
-            <p>&nbsp<span class="end-property">;</span></p>
+            <p>&nbsp</p>
 
             <!--:: SECONDARY BUTTON ::-->
             <div class="row property-display-wrapper">
                 <div class="col-md-5">
                     <h3 class="tag-title">Secondary Button</h3>
                     <div class="property-desc-row">
-                        <div>background-color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="background-color"></span></strong></div>
+                        <div class="property-label">background-color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary" data-property="background-color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>border:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="border"></span></strong></div>
+                        <div class="property-label">border:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="border"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary" data-property="border" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>padding:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="padding"></span></strong></div>
+                        <div class="property-label">border-radius:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="border-radius"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary" data-property="border-radius" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>margin:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="margin"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary" data-property="color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
+                        <div class="property-label">max-width:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="max-width"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary" data-property="max-width" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
+                        <div class="property-label">padding:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="padding"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary" data-property="padding" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -2072,21 +2376,39 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Secondary Button - Hover</h3>
                     <div class="property-desc-row">
-                        <div>background-color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.hover" data-element-property="background-color"></span></strong></div>
+                        <div class="property-label">background-color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary.hover" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.hover" data-property="background-color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>border:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.hover" data-element-property="border"></span></strong></div>
+                        <div class="property-label">border:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary.hover" data-element-property="border"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.hover" data-property="border" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>padding:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.hover" data-element-property="padding"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary.hover" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.hover" data-property="color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
-                    <div class="property-desc-row">
-                        <div>margin:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.hover" data-element-property="margin"></span></strong></div>
-                    </div>
+
                 </div>
                 <div class="col-md-7">
                     <div class="col-md-12 btn-display-wrapper">
@@ -2103,20 +2425,37 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Secondary Button - Active</h3>
                     <div class="property-desc-row">
-                        <div>background-color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.active" data-element-property="background-color"></span></strong></div>
+                        <div class="property-label">background-color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary.active" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.active" data-property="background-color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>border:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.active" data-element-property="border"></span></strong></div>
+                        <div class="property-label">border:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary.active" data-element-property="border"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.active" data-property="border" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>padding:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.active" data-element-property="padding"></span></strong></div>
-                    </div>
-                    <div class="property-desc-row">
-                        <div>margin:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.active" data-element-property="margin"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary.active" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.active" data-property="color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -2134,20 +2473,37 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Secondary Button - Focus</h3>
                     <div class="property-desc-row">
-                        <div>background-color:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.focus" data-element-property="background-color"></span></strong></div>
+                        <div class="property-label">background-color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary.focus" data-element-property="background-color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.focus" data-property="background-color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>border:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.focus" data-element-property="border"></span></strong></div>
+                        <div class="property-label">border:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary.focus" data-element-property="border"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.focus" data-property="border" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                     <div class="property-desc-row">
-                        <div>padding:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.focus" data-element-property="padding"></span></strong></div>
-                    </div>
-                    <div class="property-desc-row">
-                        <div>margin:</div>
-                        <div><strong><span class="property-printer" data-element-to-display=".btn-secondary.focus" data-element-property="margin"></span></strong></div>
+                        <div class="property-label">color:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display=".btn-secondary.focus" data-element-property="color"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.focus" data-property="color" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -2170,9 +2526,29 @@
                 <div class="col-md-5">
                     <h3 class="tag-title">Ordered Lists</h3>
                     <div class="property-desc-row">
-                        <div>margin:</div>
-                        <div><strong><span class="property-printer" data-element-to-display="ol" data-element-property="margin"></span></strong></div>
+                        <div class="property-label">margin:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="ol" data-element-property="margin"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="ol" data-property="margin" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
+                    <h4 class="tag-title">Item</h4>
+                    <div class="property-desc-row">
+                        <div class="property-label">padding:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="ol>li" data-element-property="padding"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="ol>li" data-property="padding" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md-7">
                     <div class="list-display-wrapper">
@@ -2188,14 +2564,44 @@
                     </div>
                 </div>
             </div>
-
+            <p>&nbsp;</p>
             <!--:: UNORDERED LIST ::-->
             <div class="row property-display-wrapper">
                 <div class="col-md-5">
                     <h3 class="tag-title">Unordered Lists</h3>
                     <div class="property-desc-row">
-                        <div>margin:</div>
-                        <div><strong><span class="property-printer" data-element-to-display="ul" data-element-property="margin"></span></strong></div>
+                        <div class="property-label">list-style:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="ul" data-element-property="list-style"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="ul" data-property="list-style" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="property-desc-row">
+                        <div class="property-label">margin:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="ul" data-element-property="margin"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="ul" data-property="margin" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <h4 class="tag-title">Item</h4>
+                    <div class="property-desc-row">
+                        <div class="property-label">padding:</div>
+                        <div class="inline-edit-group">
+                            <a href="javascript:void(0)" class="inline-edit-trigger property-text">
+                                <span class="property-printer" data-element-to-display="ul > li" data-element-property="padding"></span>
+                            </a>
+                            <input class="inline-edit-input property-edit" data-property-element="ul > li" data-property="padding" /><span class="end-property">;</span>
+                            <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
+                            <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7">

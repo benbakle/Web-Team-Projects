@@ -4,7 +4,10 @@
 {
     font-size: $root_font-size;
 }
-
+.root
+{
+    font-size:$root_font-size;
+}
 body, .body-text
 {
     color: $body_color;
@@ -74,15 +77,16 @@ a
 {
     color: $a_color;
     text-decoration: $a_text-decoration;
+    transition: $global_transition;
 }
-
+a.hover, a.focus,
 a:hover, a:focus
 {
     color: $a-hover_color;
     text-decoration: $a-hover_text-decoration;
 }
 
-a:focus
+a:focus, a.focus
 {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;

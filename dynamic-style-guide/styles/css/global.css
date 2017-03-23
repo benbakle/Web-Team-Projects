@@ -1,6 +1,9 @@
 ﻿:root {
   font-size: 16px; }
 
+.root {
+  font-size: 16px; }
+
 body, .body-text {
   color: #222;
   font-family: "Century Gothic", sans-sarif;
@@ -49,13 +52,15 @@ small {
 
 a {
   color: #C8102E;
-  text-decoration: underline; }
+  text-decoration: underline;
+  transition: 0.5s; }
 
+a.hover, a.focus,
 a:hover, a:focus {
   color: #f3657c;
   text-decoration: none; }
 
-a:focus {
+a:focus, a.focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
