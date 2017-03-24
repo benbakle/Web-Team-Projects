@@ -26,8 +26,16 @@
                 <li><a href="#sample-text">Sampe Text</a></li>
             </ul>
             <hr />
+            <div class="code">
+                &lt;head&gt;
+            </div>
+            <textarea type="text" class="head-text"></textarea>
+            <a href="javascript:void(0)" class="submit-head-text">Insert</a>
+            <div class="code">
+                &lt;/head&gt;
+            </div>
+            <br />
             <a href="#" class="inline-edit-all"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit All</a>
-            <a href="#" class="inline-edit-cancel cancel-all"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
         </div>
         <!--:: FONT FAMILY SECTION::-->
         <section class="container font-family-wrapper" id="fontFamiliy">
@@ -2657,35 +2665,22 @@
             <h2>Sample Text</h2>
             <hr />
             <div class="row">
-              
+
                 <div class="col-md-12">
                     <h1>Vestibulum ante ipsum</h1>
-                    <p>Praesent sapien massa, convallis a pellentesque nec, 
-                    egestas non nisi. Nulla porttitor accumsan tincidunt. 
-                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
-                    Donec sollicitudin molestie malesuada. Vivamus suscipit tortor 
-                    eget felis porttitor volutpat. Cras ultricies ligula sed magna
-                    dictum porta. Sed porttitor lectus nibh. Vivamus suscipit tortor
-                    eget felis porttitor volutpat. Cras ultricies ligula sed magna
-                    dictum porta. Proin eget tortor risus.</p>
+                    <p>
+                        Praesent sapien massa, convallis a pellentesque nec,
+                        egestas non nisi. Nulla porttitor accumsan tincidunt.
+                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                        Donec sollicitudin molestie malesuada. Vivamus suscipit tortor
+                        eget felis porttitor volutpat. Cras ultricies ligula sed magna
+                        dictum porta. Sed porttitor lectus nibh. Vivamus suscipit tortor
+                        eget felis porttitor volutpat. Cras ultricies ligula sed magna
+                        dictum porta. Proin eget tortor risus.
+                    </p>
                 </div>
                 <div class="col-md-6 col-md-offset-6">
                     <h1>Quisque velit</h1>
-                    <p>
-                        Vivamus magna justo, lacinia eget consectetur sed, 
-                        convallis at tellus. Nulla porttitor accumsan tincidunt. 
-                        Quisque velit nisi, pretium ut lacinia in, elementum 
-                        id enim. Vivamus magna justo, lacinia eget consectetur 
-                        sed, convallis at tellus. Curabitur aliquet quam id dui 
-                        posuere blandit. Pellentesque in ipsum id orci porta dapibus. 
-                        Donec sollicitudin molestie malesuada. Vestibulum ac 
-                        diam sit amet quam vehicula elementum sed sit amet dui. 
-                        Curabitur aliquet quam id dui posuere blandit. 
-                        Pellentesque in ipsum id orci porta dapibus.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Quisque velit</h3>
                     <p>
                         Vivamus magna justo, lacinia eget consectetur sed,
                         convallis at tellus. Nulla porttitor accumsan tincidunt.
@@ -2699,6 +2694,21 @@
                         Pellentesque in ipsum id orci porta dapibus.
                     </p>
                 </div>
+                <div class="col-md-6">
+                    <h3>Quisque velit</h3>
+                    <small>
+                        Vivamus magna justo, lacinia eget consectetur sed,
+                        convallis at tellus. Nulla porttitor accumsan tincidunt.
+                        Quisque velit nisi, pretium ut lacinia in, elementum
+                        id enim. Vivamus magna justo, lacinia eget consectetur
+                        sed, convallis at tellus. Curabitur aliquet quam id dui
+                        posuere blandit. Pellentesque in ipsum id orci porta dapibus.
+                        Donec sollicitudin molestie malesuada. Vestibulum ac
+                        diam sit amet quam vehicula elementum sed sit amet dui.
+                        Curabitur aliquet quam id dui posuere blandit.
+                        Pellentesque in ipsum id orci porta dapibus.
+                    </small>
+                </div>
         </section>
 
 
@@ -2708,6 +2718,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/style-guide.js"></script>
     <script src="js/inline-edit.js"></script>
+    <script src="js/insert-into-head.js"></script>
     <script src="js/color-shader.js"></script>
 </body>
 </html>
