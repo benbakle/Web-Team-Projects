@@ -4,14 +4,15 @@ var updateElementProperty = function () {
     var $propertyEdit = $(".property-edit");
     $propertyEdit.each(function () {
         var element = $(this).attr("data-property-element");
+        var isVisible = $(this).css("visibility") == "visible";
         var property = $(this).attr("data-property");
         var value = $(this).val();
-        if (value !== "") {
+        if (value !== "" && isVisible) {
             $(element).css(property, value);
             $(this).prev(".property-text").text(value);
         }
     });
-    
+
 }
 
 var showInput = function (trigger) {
@@ -49,3 +50,8 @@ $(".inline-edit-all").on("click", function () {
         showInput($(this));
     });
 });
+
+$(".color-picker").change(function () {
+    //alert($(this).val());
+});
+

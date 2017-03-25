@@ -16,7 +16,7 @@
     <div class="style-guide-wrapper">
         <div class="container">
             <h1>Dynamic Style Guide</h1>
-            <ul class="list-inline">
+            <ul class="list-inline style-guide-nav">
                 <li><a href="#fontFamiliy">Font Families</a></li>
                 <li><a href="#typography">Typography</a></li>
                 <li><a href="#colors">Colors</a></li>
@@ -26,17 +26,21 @@
                 <li><a href="#sample-text">Sampe Text</a></li>
             </ul>
             <hr />
-            <div class="code">
-                &lt;head&gt;
-            </div>
-            <textarea type="text" class="head-text"></textarea>
-            <a href="javascript:void(0)" class="submit-head-text">Insert</a>
-            <div class="code">
-                &lt;/head&gt;
+            <div class="slide-toggle">
+                <a href="javascript:void(0)" class="slide-toggle-trigger">Add font/stylesheet <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                <div class="slide-toggle-content">
+                    <div class="insert-into-head-display">
+                    </div>
+                    <div class="insert-into-head">
+                        <input type="text" class="insert-text" value="https://fonts.googleapis.com/css?family=Roboto" />
+                        <a href="javascript:void(0)" class="insert-css"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
             </div>
             <br />
-            <a href="#" class="inline-edit-all"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit All</a>
+            <a href="#" class="inline-edit-all">Edit All <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
         </div>
+
         <!--:: FONT FAMILY SECTION::-->
         <section class="container font-family-wrapper" id="fontFamiliy">
             <h2>Font Families</h2>
@@ -52,7 +56,7 @@
                                 <span class="property-printer" data-element-to-display="h1" data-element-property="font-family"></span>
                             </a>
                             <input class="inline-edit-input property-edit" data-property-element="h1" data-property="font-family" />
-                            <span class="end-property"><span class="end-property">;</span></span>
+                            <span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -64,7 +68,7 @@
                                 <span class="property-printer" data-element-to-display="h1" data-element-property="font-size"></span>
                             </a>
                             <input class="inline-edit-input property-edit" data-property-element="h1" data-property="font-size" />
-                            <span class="end-property"><span class="end-property">;</span></span>
+                            <span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -75,7 +79,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="h1" data-element-property="font-style"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="h1" data-property="font-style" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input class="inline-edit-input property-edit" data-property-element="h1" data-property="font-style" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -86,7 +90,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="h1" data-element-property="font-weight"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="h1" data-property="font-weight" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input class="inline-edit-input property-edit" data-property-element="h1" data-property="font-weight" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -110,7 +114,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="body" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="body" data-property="color" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="body" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -121,7 +125,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="body" data-element-property="font-family"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="body" data-property="font-family" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input class="inline-edit-input property-edit" data-property-element="body" data-property="font-family" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -132,7 +136,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="body" data-element-property="font-size"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="body" data-property="font-size" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input class="inline-edit-input property-edit" data-property-element="body" data-property="font-size" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -144,7 +148,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="body" data-element-property="font-weight"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="body" data-property="font-weight" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input class="inline-edit-input property-edit" data-property-element="body" data-property="font-weight" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -168,7 +172,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".accent-font" data-element-property="font-family"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".accent-font" data-property="font-family" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input class="inline-edit-input property-edit" data-property-element=".accent-font" data-property="font-family" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -179,7 +183,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".accent-font" data-element-property="font-size"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".accent-font" data-property="font-size" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input class="inline-edit-input property-edit" data-property-element=".accent-font" data-property="font-size" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -190,7 +194,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".accent-font" data-element-property="font-style"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".accent-font" data-property="font-style" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input class="inline-edit-input property-edit" data-property-element=".accent-font" data-property="font-style" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -201,7 +205,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".accent-font" data-element-property="font-weight"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".accent-font" data-property="font-weight" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input class="inline-edit-input property-edit" data-property-element=".accent-font" data-property="font-weight" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -230,7 +234,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="h1" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="h1" data-property="color" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="h1" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -241,7 +245,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="h1" data-element-property="font-family"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="h1" data-property="font-family" /><span class="end-property"><span class="end-property">;</span></span>
+                            <input class="inline-edit-input property-edit" data-property-element="h1" data-property="font-family" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -299,7 +303,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="h2" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="h2" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="h2" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -368,7 +372,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="h3" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="h3" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="h3" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -437,7 +441,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="h4" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="h4" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="h4" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -506,7 +510,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="h5" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="h5" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="h5" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -575,7 +579,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="h6" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="h6" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="h6" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -644,7 +648,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="p" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="p" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="p" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -729,7 +733,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="blockquote" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="blockquote" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="blockquote" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -1973,7 +1977,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="a" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="a" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="a" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2032,7 +2036,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="a.hover" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="a.hover" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="a.hover" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2069,7 +2073,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display="a.focus" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element="a.focus" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element="a.focus" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2146,7 +2150,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".btn-primary" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element=".btn-primary" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2216,7 +2220,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".btn-primary.hover" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.hover" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element=".btn-primary.hover" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2265,7 +2269,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".btn-primary.active" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.active" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element=".btn-primary.active" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2313,7 +2317,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".btn-primary.focus" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-primary.focus" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element=".btn-primary.focus" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2375,7 +2379,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".btn-secondary" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element=".btn-secondary" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2445,7 +2449,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".btn-secondary.hover" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.hover" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element=".btn-secondary.hover" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2494,7 +2498,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".btn-secondary.active" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.active" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element=".btn-secondary.active" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2542,7 +2546,7 @@
                             <a href="javascript:void(0)" class="inline-edit-trigger property-text">
                                 <span class="property-printer" data-element-to-display=".btn-secondary.focus" data-element-property="color"></span>
                             </a>
-                            <input class="inline-edit-input property-edit" data-property-element=".btn-secondary.focus" data-property="color" /><span class="end-property">;</span>
+                            <input type="color" class="color-picker inline-edit-input property-edit" data-property-element=".btn-secondary.focus" data-property="color" /><span class="end-property">;</span>
                             <a class="inline-edit-update" href=javascript:void(0)><i class="fa fa-check"></i></a>
                             <a class="inline-edit-cancel" href=javascript:void(0)><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
@@ -2709,6 +2713,7 @@
                         Pellentesque in ipsum id orci porta dapibus.
                     </small>
                 </div>
+            </div>
         </section>
 
 

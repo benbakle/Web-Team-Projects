@@ -6,9 +6,15 @@
     margin: 25px auto;
 }
 
+.style-guide-wrapper .style-guide-nav
+{
+    margin:25px 0;
+}
+
+
 .style-guide-wrapper section
 {
-    margin: 45px auto;
+    margin: 50px auto 100px auto;
 }
 
 .style-guide-wrapper .property-display-wrapper
@@ -49,8 +55,6 @@
 {
     width: 35%;
 }
-
-
 
 .style-guide-wrapper .font-display-wrapper
 {
@@ -155,29 +159,87 @@
     text-shadow: 0 0 0 #333;
 }
 
-/*.style-guide-wrapper .btn-class-desc h4
+.style-guide-wrapper a
 {
-    color: #222;
-    font-style: normal;
-}*/
-
-.style-guide-wrapper .code
-{
-    font-family: 'Courier New';
-    font-size: 1.5rem;
-    font-weight: 700;
+    text-decoration: none;
 }
 
-.style-guide-wrapper .head-text
+.style-guide-wrapper a:hover
 {
-    margin-left: 25px;
-    width:calc(100% - 50px);
-    height:100px;
-    vertical-align:top;
-    background-color:#333;
-    color:#eee;
-    padding:15px;
-    font-family:'Courier New';
-    font-weight:700;
+    text-decoration:underline;
+}
 
+.inline-edit-all,
+.insert-css,
+.slide-toggle-trigger
+{
+    font-size: 1.5rem;
+    padding: 15px 0;
+    text-decoration: none !important;
+}
+
+.insert-into-head-display div
+{
+    color: #555;
+    padding: 2px 15px;
+    font-size: .75rem;
+}
+.insert-into-head-display > div,
+.style-guide-wrapper .insert-text
+{
+    width: 100%;
+    max-width: 800px;
+    vertical-align: top;
+    background-color: #333;
+    color: #eee;
+    font-family: 'Courier New';
+    font-weight: 700;
+    border:none;
+}
+.insert-into-head-display > div:first-child
+{
+    padding-top:15px;
+}
+.insert-into-head-display > div:last-child
+{
+    padding-bottom: 25px;
+}
+.style-guide-wrapper .insert-text
+{
+    border-top: 1px solid #ccc;
+    padding: 5px 15px;
+}
+
+.slide-toggle-content
+{
+    display:none;
+}
+
+.color-picker
+{
+    height: 32px;
+    top: 7px;
+    position: relative;
+    right: 52px;
+    position: absolute;
+}
+
+::-webkit-input-placeholder
+{ /* Chrome/Opera/Safari */
+    color: #111;
+}
+
+::-moz-placeholder
+{ /* Firefox 19+ */
+    color: #111;
+}
+
+:-ms-input-placeholder
+{ /* IE 10+ */
+    color: #111;
+}
+
+:-moz-placeholder
+{ /* Firefox 18- */
+    color: #111;
 }

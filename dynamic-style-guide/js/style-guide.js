@@ -1,24 +1,24 @@
-var handleColors = function () {
-    var setColorBlock = function () {
-        var $colorBlock = $(".color-block");
-        $.each($colorBlock, function () {
-            var color = $(this).find(".color-block-text").text();
-            $(this).css("background-color", color);
-        });
-    };
-    var copyColor = function () {
-        $(".color-block").on("click", function () {
-            window.prompt('Copy to Clipboard: Ctrl+C then Enter', $(this).children(".color-block-text").text());
-        })
-    }
+//var handleColors = function () {
+//    var setColorBlock = function () {
+//        var $colorBlock = $(".color-block");
+//        $.each($colorBlock, function () {
+//            var color = $(this).find(".color-block-text").text();
+//            $(this).css("background-color", color);
+//        });
+//    };
+//    var copyColor = function () {
+//        $(".color-block").on("click", function () {
+//            window.prompt('Copy to Clipboard: Ctrl+C then Enter', $(this).children(".color-block-text").text());
+//        })
+//    }
 
-    //handleColor Calls
-    $(document).on("keyup", function () {
-        setColorBlock();
-    })
-    setColorBlock();
-    copyColor();
-}
+//    //handleColor Calls
+//    $(document).on("keyup", function () {
+//        setColorBlock();
+//    })
+//    setColorBlock();
+//    copyColor();
+//}
 
 var printProperty = function () {
     var $printProperty = $(".property-printer");
@@ -57,9 +57,17 @@ var renderColorPalette = function (target, colorClass) {
         $(target).append("<div class='" + colorClass + " color-lighten-" + i + "'>.color-lighten-" + i + "</div>");
     }
 }
-$(document).ready(function () {
 
+var handleSlideToggle = function () {
+    $(".slide-toggle-trigger").on("click", function () {
+        $(this).siblings(".slide-toggle-content").slideToggle();
+    })
+}
+
+
+$(document).ready(function () {
     printProperty();
     colorShader();
+    handleSlideToggle();
 
 });
