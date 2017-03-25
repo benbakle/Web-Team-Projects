@@ -51,7 +51,3 @@ $(".inline-edit-all").on("click", function () {
     });
 });
 
-$(".color-picker").change(function () {
-    //alert($(this).val());
-});
-

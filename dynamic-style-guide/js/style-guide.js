@@ -20,6 +20,20 @@
 //    copyColor();
 //}
 
+
+var hexDigits = new Array
+    ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f");
+
+//Function to convert rgb color to hex format
+function rgb2hex(rgb) {
+    rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+    return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
+}
+
+function hex(x) {
+    return isNaN(x) ? "00" : hexDigits[(x - x % 16) / 16] + hexDigits[x % 16];
+}
+
 var printProperty = function () {
     var $printProperty = $(".property-printer");
 
@@ -64,10 +78,23 @@ var handleSlideToggle = function () {
     })
 }
 
+var setColorPickerColor = function () {
+    $colorPicker = $(".color-picker");
+    $colorPicker.each(function () {
+        var value = $(this).siblings(".property-text").text().trim();
+        var hasNotBeenHexed = !value.includes("#");
+        if (value != null && hasNotBeenHexed) {
+            value = rgb2hex(value);
+            $(this).val(value);
+            console.log(value);
+        }
+    })
+}
 
 $(document).ready(function () {
     printProperty();
     colorShader();
     handleSlideToggle();
+    setColorPickerColor();
 
 });
