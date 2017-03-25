@@ -26,6 +26,9 @@ var hexDigits = new Array
 
 //Function to convert rgb color to hex format
 function rgb2hex(rgb) {
+    rgb = rgb.replace("a", "");
+    rgb = rgb.split(",");
+    rgb = rgb[0] + "," + rgb[1] + "," + rgb[2].split(")")[0] + ")";
     rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
     return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
 }
@@ -86,7 +89,6 @@ var setColorPickerColor = function () {
         if (value != null && hasNotBeenHexed) {
             value = rgb2hex(value);
             $(this).val(value);
-            console.log(value);
         }
     })
 }
@@ -96,5 +98,4 @@ $(document).ready(function () {
     colorShader();
     handleSlideToggle();
     setColorPickerColor();
-
 });
