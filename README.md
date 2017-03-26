@@ -1,7 +1,5 @@
 # Web-Team-Projects
-Web Team Projects
-<snippet>
-  <content>Projects created and resourced by the web team
+Projects created and resourced by the web team
 # Dynamic Style Guide
 TODO: Write a project description
 ## Installation
@@ -24,6 +22,3 @@ TODO: Write license
 <a href="https://codepen.io/bbakle/project/editor/ZyrJmX/" target="_blank">View a working demo</a>
 
 **Note:** Demo may not be up to date with project.  To view an up to date working example, download project and view on local machine.
-</content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
